@@ -1,0 +1,128 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /Users/leomeissner/Desktop/N7/2_Annee/PrF/BE
+# Auto-detected concurrency: 4
+$ /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -config > /var/folders/c4/yqrr8d5n1rj5ljzbr7kycw9h0000gn/T/dune_41b43e_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some External "/Users/leomeissner/.opam/4.12.0/lib/toplevel"
+#  ; ocaml_bin = External "/Users/leomeissner/.opam/4.12.0/bin"
+#  ; ocaml = Ok External "/Users/leomeissner/.opam/4.12.0/bin/ocaml"
+#  ; ocamlc = External "/Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok External "/Users/leomeissner/.opam/4.12.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/leomeissner/.opam/4.12.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/leomeissner/.opam/4.12.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/leomeissner/Desktop/N7/2_Annee/PrF/BE"
+#        ; "INSIDE_DUNE" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/BE/_build/default"
+#        ; "MANPATH" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/BE/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/BE/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/BE/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/BE/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/Users/leomeissner/.opam/4.12.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.12.0"
+#      ; standard_library_default = "/Users/leomeissner/.opam/4.12.0/lib/ocaml"
+#      ; standard_library = "/Users/leomeissner/.opam/4.12.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin21.5.0"
+#      ; target = "x86_64-apple-darwin21.5.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X029"
+#      ; cmi_magic_number = "Caml1999I029"
+#      ; cmo_magic_number = "Caml1999O029"
+#      ; cma_magic_number = "Caml1999A029"
+#      ; cmx_magic_number = "Caml1999Y029"
+#      ; cmxa_magic_number = "Caml1999Z029"
+#      ; ast_impl_magic_number = "Caml1999M029"
+#      ; ast_intf_magic_number = "Caml1999N029"
+#      ; cmxs_magic_number = "Caml1999D029"
+#      ; cmt_magic_number = "Caml1999T029"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="be"' -o expression.pp.ml --impl expression.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt -modules -impl expression.pp.ml) > _build/default/.be.objs/expression.pp.ml.d
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .be.objs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -no-alias-deps -opaque -open Be -o .be.objs/byte/be__Expression.cmo -c -impl expression.pp.ml)
+> File "expression.ml", line 104, characters 12-31:
+> 104 |     let rec eval_bienformee_rec expr_rec = match expr_rec with
+>                   ^^^^^^^^^^^^^^^^^^^
+> Warning 39 [unused-rec-flag]: unused rec flag.
+> File "expression.ml", line 59, characters 4-23:
+> 59 |     exception Malformee
+>          ^^^^^^^^^^^^^^^^^^^
+> Warning 38 [unused-extension]: exception Malformee is never used to build values.
+> (However, this constructor appears in patterns.)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -bin-annot -I .utop/.utop.eobjs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/findlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/lambda-term -I /Users/leomeissner/.opam/4.12.0/lib/logs -I /Users/leomeissner/.opam/4.12.0/lib/lwt -I /Users/leomeissner/.opam/4.12.0/lib/lwt/unix -I /Users/leomeissner/.opam/4.12.0/lib/lwt_react -I /Users/leomeissner/.opam/4.12.0/lib/mew -I /Users/leomeissner/.opam/4.12.0/lib/mew_vi -I /Users/leomeissner/.opam/4.12.0/lib/ocaml/compiler-libs -I /Users/leomeissner/.opam/4.12.0/lib/ocaml/threads -I /Users/leomeissner/.opam/4.12.0/lib/ocplib-endian -I /Users/leomeissner/.opam/4.12.0/lib/ocplib-endian/bigstring -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/react -I /Users/leomeissner/.opam/4.12.0/lib/result -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -I /Users/leomeissner/.opam/4.12.0/lib/trie -I /Users/leomeissner/.opam/4.12.0/lib/uchar -I /Users/leomeissner/.opam/4.12.0/lib/utop -I /Users/leomeissner/.opam/4.12.0/lib/uucp -I /Users/leomeissner/.opam/4.12.0/lib/uuseg -I /Users/leomeissner/.opam/4.12.0/lib/uutf -I /Users/leomeissner/.opam/4.12.0/lib/zed -I .be.objs/byte -no-alias-deps -o .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl .utop/utop.ml-gen)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o be.cma .be.objs/byte/be.cmo .be.objs/byte/be__Expression.cmo .be.objs/byte/be__Conway.cmo)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.exe -output-complete-exe /Users/leomeissner/.opam/4.12.0/lib/ocaml/compiler-libs/ocamlcommon.cma /Users/leomeissner/.opam/4.12.0/lib/ocaml/compiler-libs/ocamlbytecomp.cma /Users/leomeissner/.opam/4.12.0/lib/ocaml/compiler-libs/ocamltoplevel.cma /Users/leomeissner/.opam/4.12.0/lib/findlib/findlib.cma /Users/leomeissner/.opam/4.12.0/lib/findlib/findlib_top.cma /Users/leomeissner/.opam/4.12.0/lib/logs/logs.cma -I /Users/leomeissner/.opam/4.12.0/lib/ocaml /Users/leomeissner/.opam/4.12.0/lib/lwt/lwt.cma /Users/leomeissner/.opam/4.12.0/lib/logs/logs_lwt.cma /Users/leomeissner/.opam/4.12.0/lib/ocaml/unix.cma -I /Users/leomeissner/.opam/4.12.0/lib/ocaml /Users/leomeissner/.opam/4.12.0/lib/ocaml/bigarray.cma -I /Users/leomeissner/.opam/4.12.0/lib/ocaml /Users/leomeissner/.opam/4.12.0/lib/ocplib-endian/ocplib_endian.cma /Users/leomeissner/.opam/4.12.0/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /Users/leomeissner/.opam/4.12.0/lib/ocaml/threads/threads.cma -I /Users/leomeissner/.opam/4.12.0/lib/ocaml /Users/leomeissner/.opam/4.12.0/lib/lwt/unix/lwt_unix.cma -I /Users/leomeissner/.opam/4.12.0/lib/lwt/unix /Users/leomeissner/.opam/4.12.0/lib/react/react.cma /Users/leomeissner/.opam/4.12.0/lib/lwt_react/lwt_react.cma /Users/leomeissner/.opam/4.12.0/lib/result/result.cma /Users/leomeissner/.opam/4.12.0/lib/uutf/uutf.cma /Users/leomeissner/.opam/4.12.0/lib/uucp/uucp.cma /Users/leomeissner/.opam/4.12.0/lib/uuseg/uuseg.cma /Users/leomeissner/.opam/4.12.0/lib/zed/zed.cma /Users/leomeissner/.opam/4.12.0/lib/trie/trie.cma /Users/leomeissner/.opam/4.12.0/lib/mew/mew.cma /Users/leomeissner/.opam/4.12.0/lib/mew_vi/mew_vi.cma /Users/leomeissner/.opam/4.12.0/lib/lambda-term/lambda_term.cma -I /Users/leomeissner/.opam/4.12.0/lib/lambda-term /Users/leomeissner/.opam/4.12.0/lib/utop/uTop.cma /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config/inline_test_config.cma /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types/base_internalhash_types.cma -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types /Users/leomeissner/.opam/4.12.0/lib/base/caml/caml.cma /Users/leomeissner/.opam/4.12.0/lib/sexplib0/sexplib0.cma /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib/shadow_stdlib.cma /Users/leomeissner/.opam/4.12.0/lib/base/base.cma -I /Users/leomeissner/.opam/4.12.0/lib/base /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers/jane_street_headers.cma /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cma /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib/ppx_compare_lib.cma /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cma /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib/ppx_hash_lib.cma /Users/leomeissner/.opam/4.12.0/lib/time_now/time_now.cma -I /Users/leomeissner/.opam/4.12.0/lib/time_now /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cma be.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)

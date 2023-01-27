@@ -1,0 +1,233 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /Users/leomeissner/Desktop/N7/2_Annee/PrF/TP4
+# Auto-detected concurrency: 4
+$ /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -config > /var/folders/c4/yqrr8d5n1rj5ljzbr7kycw9h0000gn/T/dune_7b56a6_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some External "/Users/leomeissner/.opam/4.12.0/lib/toplevel"
+#  ; ocaml_bin = External "/Users/leomeissner/.opam/4.12.0/bin"
+#  ; ocaml = Ok External "/Users/leomeissner/.opam/4.12.0/bin/ocaml"
+#  ; ocamlc = External "/Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok External "/Users/leomeissner/.opam/4.12.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/leomeissner/.opam/4.12.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/leomeissner/.opam/4.12.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/leomeissner/Desktop/N7/2_Annee/PrF/TP4"
+#        ; "INSIDE_DUNE" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/TP4/_build/default"
+#        ; "MANPATH" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/TP4/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/TP4/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/TP4/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/leomeissner/Desktop/N7/2_Annee/PrF/TP4/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/Users/leomeissner/.opam/4.12.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.12.0"
+#      ; standard_library_default = "/Users/leomeissner/.opam/4.12.0/lib/ocaml"
+#      ; standard_library = "/Users/leomeissner/.opam/4.12.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin21.5.0"
+#      ; target = "x86_64-apple-darwin21.5.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X029"
+#      ; cmi_magic_number = "Caml1999I029"
+#      ; cmo_magic_number = "Caml1999O029"
+#      ; cma_magic_number = "Caml1999A029"
+#      ; cmx_magic_number = "Caml1999Y029"
+#      ; cmxa_magic_number = "Caml1999Z029"
+#      ; ast_impl_magic_number = "Caml1999M029"
+#      ; ast_intf_magic_number = "Caml1999N029"
+#      ; cmxs_magic_number = "Caml1999D029"
+#      ; cmt_magic_number = "Caml1999T029"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I .tp.objs/byte -no-alias-deps -opaque -o .tp.objs/byte/tp.cmo -c -impl tp.ml-gen)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I .tp.objs/byte -I .tp.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o .tp.objs/native/tp.cmx -c -impl tp.ml-gen)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -g -w -24 -I .ppx/bfcab61e6a21ecf6d2f80029fc1ef484 -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/ocaml-compiler-libs/common -I /Users/leomeissner/.opam/4.12.0/lib/ocaml-compiler-libs/shadow -I /Users/leomeissner/.opam/4.12.0/lib/ocaml/compiler-libs -I /Users/leomeissner/.opam/4.12.0/lib/ppx_derivers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/libname -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/ast -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/astlib -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/print_diff -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/stdppx -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/traverse_builtins -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/stdlib-shims -no-alias-deps -o .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/dune__exe___ppx.cmo -c -impl .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/_ppx.ml-gen)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -g -w -24 -I .ppx/bfcab61e6a21ecf6d2f80029fc1ef484 -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/ocaml-compiler-libs/common -I /Users/leomeissner/.opam/4.12.0/lib/ocaml-compiler-libs/shadow -I /Users/leomeissner/.opam/4.12.0/lib/ocaml/compiler-libs -I /Users/leomeissner/.opam/4.12.0/lib/ppx_derivers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/libname -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/ast -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/astlib -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/print_diff -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/stdppx -I /Users/leomeissner/.opam/4.12.0/lib/ppxlib/traverse_builtins -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/stdlib-shims -intf-suffix .ml-gen -no-alias-deps -o .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/dune__exe___ppx.cmx -c -impl .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/_ppx.ml-gen)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -g -w -24 -o .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types /Users/leomeissner/.opam/4.12.0/lib/base/caml/caml.cmxa /Users/leomeissner/.opam/4.12.0/lib/sexplib0/sexplib0.cmxa /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib/shadow_stdlib.cmxa /Users/leomeissner/.opam/4.12.0/lib/base/base.cmxa -I /Users/leomeissner/.opam/4.12.0/lib/base /Users/leomeissner/.opam/4.12.0/lib/ocaml/compiler-libs/ocamlcommon.cmxa /Users/leomeissner/.opam/4.12.0/lib/ocaml-compiler-libs/common/ocaml_common.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppxlib/astlib/astlib.cmxa /Users/leomeissner/.opam/4.12.0/lib/stdlib-shims/stdlib_shims.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppxlib/ast/ppxlib_ast.cmxa /Users/leomeissner/.opam/4.12.0/lib/ocaml-compiler-libs/shadow/ocaml_shadow.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppxlib/print_diff/ppxlib_print_diff.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppx_derivers/ppx_derivers.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppxlib/traverse_builtins/ppxlib_traverse_builtins.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppxlib/stdppx/stdppx.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppxlib/ppxlib.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/libname/ppx_inline_test_libname.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/ppx_inline_test.cmxa .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/dune__exe___ppx.cmx)
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp"' -o chaines.pp.ml --impl chaines.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp"' -o arbre.pp.ml --impl arbre.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp"' -o assoc.pp.ml --impl assoc.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp"' -o menu_dico.pp.mli --intf menu_dico.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp"' -o trie.pp.ml --impl trie.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp"' -o chaines.pp.mli --intf chaines.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt -modules -impl chaines.pp.ml) > _build/default/.tp.objs/chaines.pp.ml.d
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp"' -o trie.pp.mli --intf trie.mli -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && .ppx/bfcab61e6a21ecf6d2f80029fc1ef484/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="tp"' -o menu_dico.pp.ml --impl menu_dico.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt -modules -impl arbre.pp.ml) > _build/default/.tp.objs/arbre.pp.ml.d
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt -modules -impl assoc.pp.ml) > _build/default/.tp.objs/assoc.pp.ml.d
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt -modules -intf menu_dico.pp.mli) > _build/default/.tp.objs/menu_dico.pp.mli.d
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt -modules -impl trie.pp.ml) > _build/default/.tp.objs/trie.pp.ml.d
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt -modules -intf chaines.pp.mli) > _build/default/.tp.objs/chaines.pp.mli.d
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt -modules -intf trie.pp.mli) > _build/default/.tp.objs/trie.pp.mli.d
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamldep.opt -modules -impl menu_dico.pp.ml) > _build/default/.tp.objs/menu_dico.pp.ml.d
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp.objs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -no-alias-deps -opaque -open Tp -o .tp.objs/byte/tp__Assoc.cmo -c -impl assoc.pp.ml)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp.objs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -no-alias-deps -opaque -open Tp -o .tp.objs/byte/tp__Chaines.cmi -c -intf chaines.pp.mli)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp.objs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -no-alias-deps -opaque -open Tp -o .tp.objs/byte/tp__Trie.cmi -c -intf trie.pp.mli)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp.objs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -no-alias-deps -opaque -open Tp -o .tp.objs/byte/tp__Arbre.cmo -c -impl arbre.pp.ml)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp.objs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Tp -o .tp.objs/byte/tp__Chaines.cmo -c -impl chaines.pp.ml)
+> File "chaines.ml", line 33, characters 8-24:
+> 33 | let rec recompose_chaine lc =
+>              ^^^^^^^^^^^^^^^^
+> Warning 39 [unused-rec-flag]: unused rec flag.
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .tp.objs/byte -I .tp.objs/native -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Tp -o .tp.objs/native/tp__Assoc.cmx -c -impl assoc.pp.ml)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp.objs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -no-alias-deps -opaque -open Tp -o .tp.objs/byte/tp__Menu_dico.cmi -c -intf menu_dico.pp.mli)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .tp.objs/byte -I .tp.objs/native -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Tp -o .tp.objs/native/tp__Chaines.cmx -c -impl chaines.pp.ml)
+> File "chaines.ml", line 33, characters 8-24:
+> 33 | let rec recompose_chaine lc =
+>              ^^^^^^^^^^^^^^^^
+> Warning 39 [unused-rec-flag]: unused rec flag.
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp.objs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Tp -o .tp.objs/byte/tp__Trie.cmo -c -impl trie.pp.ml)
+> File "trie.ml", line 1, characters 0-10:
+> 1 | open Assoc
+>     ^^^^^^^^^^
+> Warning 33 [unused-open]: unused open Tp.Assoc.
+> File "trie.ml", line 30, characters 15-18:
+> 30 | let appartient mot trie = failwith "TO DO appartient"
+>                     ^^^
+> Warning 27 [unused-var-strict]: unused variable mot.
+> File "trie.ml", line 30, characters 19-23:
+> 30 | let appartient mot trie = failwith "TO DO appartient"
+>                         ^^^^
+> Warning 27 [unused-var-strict]: unused variable trie.
+> File "trie.ml", line 55, characters 12-15:
+> 55 | let retrait mot trie = failwith "TO DO retrait"
+>                  ^^^
+> Warning 27 [unused-var-strict]: unused variable mot.
+> File "trie.ml", line 55, characters 16-20:
+> 55 | let retrait mot trie = failwith "TO DO retrait"
+>                      ^^^^
+> Warning 27 [unused-var-strict]: unused variable trie.
+> File "trie.ml", line 64, characters 4-13:
+> 64 | let trie_dico trie = failwith "trie_dico"
+>          ^^^^^^^^^
+> Warning 32 [unused-value-declaration]: unused value trie_dico.
+> File "trie.ml", line 64, characters 14-18:
+> 64 | let trie_dico trie = failwith "trie_dico"
+>                    ^^^^
+> Warning 27 [unused-var-strict]: unused variable trie.
+> File "trie.ml", line 73, characters 12-13:
+> 73 | let affiche p trie = failwith "TO DO affiche"
+>                  ^
+> Warning 27 [unused-var-strict]: unused variable p.
+> File "trie.ml", line 73, characters 14-18:
+> 73 | let affiche p trie = failwith "TO DO affiche"
+>                    ^^^^
+> Warning 27 [unused-var-strict]: unused variable trie.
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .tp.objs/byte -I .tp.objs/native -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Tp -o .tp.objs/native/tp__Arbre.cmx -c -impl arbre.pp.ml)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .tp.objs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Tp -o .tp.objs/byte/tp__Menu_dico.cmo -c -impl menu_dico.pp.ml)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .tp.objs/byte -I .tp.objs/native -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Tp -o .tp.objs/native/tp__Trie.cmx -c -impl trie.pp.ml)
+> File "trie.ml", line 1, characters 0-10:
+> 1 | open Assoc
+>     ^^^^^^^^^^
+> Warning 33 [unused-open]: unused open Tp.Assoc.
+> File "trie.ml", line 30, characters 15-18:
+> 30 | let appartient mot trie = failwith "TO DO appartient"
+>                     ^^^
+> Warning 27 [unused-var-strict]: unused variable mot.
+> File "trie.ml", line 30, characters 19-23:
+> 30 | let appartient mot trie = failwith "TO DO appartient"
+>                         ^^^^
+> Warning 27 [unused-var-strict]: unused variable trie.
+> File "trie.ml", line 55, characters 12-15:
+> 55 | let retrait mot trie = failwith "TO DO retrait"
+>                  ^^^
+> Warning 27 [unused-var-strict]: unused variable mot.
+> File "trie.ml", line 55, characters 16-20:
+> 55 | let retrait mot trie = failwith "TO DO retrait"
+>                      ^^^^
+> Warning 27 [unused-var-strict]: unused variable trie.
+> File "trie.ml", line 64, characters 4-13:
+> 64 | let trie_dico trie = failwith "trie_dico"
+>          ^^^^^^^^^
+> Warning 32 [unused-value-declaration]: unused value trie_dico.
+> File "trie.ml", line 64, characters 14-18:
+> 64 | let trie_dico trie = failwith "trie_dico"
+>                    ^^^^
+> Warning 27 [unused-var-strict]: unused variable trie.
+> File "trie.ml", line 73, characters 12-13:
+> 73 | let affiche p trie = failwith "TO DO affiche"
+>                  ^
+> Warning 27 [unused-var-strict]: unused variable p.
+> File "trie.ml", line 73, characters 14-18:
+> 73 | let affiche p trie = failwith "TO DO affiche"
+>                    ^^^^
+> Warning 27 [unused-var-strict]: unused variable trie.
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I .appli_chaines.eobjs/byte -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -I .tp.objs/byte -no-alias-deps -opaque -o .appli_chaines.eobjs/byte/dune__exe__Appli_chaines.cmo -c -impl appli_chaines.ml)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o tp.cma .tp.objs/byte/tp.cmo .tp.objs/byte/tp__Assoc.cmo .tp.objs/byte/tp__Arbre.cmo .tp.objs/byte/tp__Chaines.cmo .tp.objs/byte/tp__Trie.cmo .tp.objs/byte/tp__Menu_dico.cmo)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .appli_chaines.eobjs/byte -I .appli_chaines.eobjs/native -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -I .tp.objs/byte -I .tp.objs/native -intf-suffix .ml -no-alias-deps -opaque -o .appli_chaines.eobjs/native/dune__exe__Appli_chaines.cmx -c -impl appli_chaines.ml)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -I .tp.objs/byte -I .tp.objs/native -I /Users/leomeissner/.opam/4.12.0/lib/base -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types -I /Users/leomeissner/.opam/4.12.0/lib/base/caml -I /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib -I /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers -I /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config -I /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib -I /Users/leomeissner/.opam/4.12.0/lib/sexplib0 -I /Users/leomeissner/.opam/4.12.0/lib/time_now -intf-suffix .ml -no-alias-deps -opaque -open Tp -o .tp.objs/native/tp__Menu_dico.cmx -c -impl menu_dico.pp.ml)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o tp.cmxa .tp.objs/native/tp.cmx .tp.objs/native/tp__Assoc.cmx .tp.objs/native/tp__Arbre.cmx .tp.objs/native/tp__Chaines.cmx .tp.objs/native/tp__Trie.cmx .tp.objs/native/tp__Menu_dico.cmx)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -shared -linkall -I . -o tp.cmxs tp.cmxa)
+$ (cd _build/default && /Users/leomeissner/.opam/4.12.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -o appli_chaines.exe /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/config/inline_test_config.cmxa /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /Users/leomeissner/.opam/4.12.0/lib/base/base_internalhash_types /Users/leomeissner/.opam/4.12.0/lib/base/caml/caml.cmxa /Users/leomeissner/.opam/4.12.0/lib/sexplib0/sexplib0.cmxa /Users/leomeissner/.opam/4.12.0/lib/base/shadow_stdlib/shadow_stdlib.cmxa /Users/leomeissner/.opam/4.12.0/lib/base/base.cmxa -I /Users/leomeissner/.opam/4.12.0/lib/base /Users/leomeissner/.opam/4.12.0/lib/jane-street-headers/jane_street_headers.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppx_compare/runtime-lib/ppx_compare_lib.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cmxa /Users/leomeissner/.opam/4.12.0/lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa /Users/leomeissner/.opam/4.12.0/lib/time_now/time_now.cmxa -I /Users/leomeissner/.opam/4.12.0/lib/time_now /Users/leomeissner/.opam/4.12.0/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cmxa tp.cmxa .appli_chaines.eobjs/native/dune__exe__Appli_chaines.cmx)

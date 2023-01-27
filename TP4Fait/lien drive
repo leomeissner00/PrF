@@ -1,0 +1,14 @@
+https://drive.google.com/drive/folders/1RJDOiSU5W-L9W8TJElfTOj9oodzNSn9w
+
+https://drive.google.com/drive/folders/176lLS72vS2ELCXPLRkkGEvmmldWcjlix
+
+commande à faire :
+test -r /applications/opam/opam-init/init.sh && . /applications/opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+
+let rec suite_rec compte taille depart = match compte with
+    | 0 -> depart
+    | _ -> if compte = taille then
+      suivant
+    else [suivant](suite_rec (compte+1) taille depart)
+  in suite_rec 0 taille depart
